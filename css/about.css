@@ -1,0 +1,41 @@
+.content .about {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; }
+  .content .about .my-about {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "GillSans-Medium-Italic", "Arch-Regular"; }
+    .content .about .my-about .head-text-content {
+      justify-content: flex-start; }
+    .content .about .my-about .about-p {
+      padding: 30px 0;
+      margin: 0; }
+    .content .about .my-about .cv-btn {
+      max-width: 102px !important;
+      color: #04383b;
+      padding: 5px 25px;
+      box-shadow: 0 2px 12px 0 #b4b4b4;
+      border-radius: 40px;
+      transition: 0.2s ease-in; }
+      .content .about .my-about .cv-btn:hover {
+        background-color: #04383b;
+        color: #ffffff; }
+  .content .about .image-draw {
+    width: 50%; }
+    .content .about .image-draw img {
+      width: 100%; }
+
+@media screen and (max-width: 768px) {
+  .content .about .my-about {
+    width: 100%;
+    margin-bottom: 10px;
+    align-items: center; }
+    .content .about .my-about .about-p {
+      text-align: center; }
+    .content .about .my-about .head-text-content {
+      justify-content: center; }
+  .content .about .image-draw {
+    width: 100%; } }

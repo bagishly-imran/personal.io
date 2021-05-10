@@ -1,0 +1,87 @@
+@import url(../css/header.css);
+@import url(../css/footer.css);
+@keyframes openMenu {
+  0% {
+    width: 0;
+    left: -40px; }
+  100% {
+    width: 200px;
+    left: 0; } }
+@keyframes closeMenu {
+  0% {
+    width: 200px;
+    left: 0; }
+  100% {
+    width: 0 !important;
+    left: -40px !important; } }
+@font-face {
+  font-family: "Arch-Regular";
+  src: url("../fonts/Arch-Regular.otf"); }
+@font-face {
+  font-family: "GillSans-Medium-Italic";
+  src: url("../fonts/GillSans-Medium-Italic.otf"); }
+* {
+  box-sizing: border-box;
+  text-decoration: none !important;
+  outline: none !important; }
+
+html, body {
+  margin: 0;
+  height: 100%; }
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  list-style: none; }
+  .menu-list li .mnu-btn {
+    font-family: "GillSans-Medium-Italic", "Arch-Regular";
+    color: #ffffff;
+    padding: 0 10px;
+    font-weight: 500; }
+    .menu-list li .mnu-btn:hover {
+      color: #c0c0c0; }
+
+.scm-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  transition: 0.3s;
+  background-color: transparent;
+  box-shadow: 0 0 3px 0 #ffffff; }
+  .scm-btn i {
+    color: #ffffff !important;
+    font-size: 17px; }
+  .scm-btn:hover {
+    box-shadow: none; }
+    .scm-btn:hover i {
+      color: #ffffff !important; }
+    .scm-btn:hover:nth-child(1) {
+      background-color: #3b5998; }
+    .scm-btn:hover:nth-child(2) {
+      background-color: #007bb5; }
+    .scm-btn:hover:nth-child(3) {
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+
+.head-text-content {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .head-text-content .head-text {
+    font-family: "Arch-Regular", "GillSans-Medium-Italic";
+    color: #04383b; }
+
+.padding-success {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important; }
+
+.bg-blue {
+  background-color: #0660b4; }
+
+.txt-color {
+  color: #ffffff !important; }

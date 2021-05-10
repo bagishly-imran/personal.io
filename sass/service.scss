@@ -1,0 +1,151 @@
+.content{
+    .service{
+        display: flex;
+        flex-direction: column;
+        .my-cards{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-top: 15px;
+            .my-card{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative !important;
+                max-width: 230px !important;
+                height: 250px;
+                margin: 10px;
+                box-shadow: 0 2px 12px 0 #b4b4b4;
+                border-radius: 40px;  
+                transition: 0.2s ease-in;
+                overflow: hidden;
+                cursor: pointer;
+                &:hover{
+                    .card-paragraph{height: 30% !important;}
+                }
+                svg{
+                    width: 50px;
+                    height: 50px;
+                    transition: 0.2s ease-in;
+                    fill: #0660b4;
+                }
+                .card-heading{
+                    margin-top: 5px;
+                    font-size: 30px;
+                    font-family: "Arch-Regular", "GillSans-Medium-Italic";
+                    font-weight: 600;
+                    transition: 0.2s ease-in;
+                    color: #04383b;
+                }
+                .card-paragraph{
+                    height: 0px !important; 
+                    display: flex;
+                    align-items: flex-start;
+                    font-family: "GillSans-Medium-Italic", "Arch-Regular";
+                    text-align: center;
+                    color: #04383b;
+                    transition: 0.2s ease-in;
+                    overflow: hidden;
+                    margin: 0;
+                }
+            }
+        } 
+    }
+}
+
+.content{
+    .portfolio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .carousel-new{
+            width: 72% !important;
+            border-radius: 40px;
+            .carousel-inner{
+                .carousel-item{
+                    .img-content{
+                        width: 100%;
+                        display: flex;
+                        justify-content: center !important;
+                        padding-top: 15px;
+                        border-radius: 40px !important;
+                        img{
+                            max-height: 300px;
+                            border-radius: 40px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.content{
+    .service-about-two{    
+        .tab-content{
+            height: 300px;
+            border-radius: 40px;
+            box-shadow: 0 2px 12px 0 #b4b4b4;
+            ::-webkit-scrollbar{width: 4px !important;}
+            .tab{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                float: left;
+                width: 30%;
+                height: 300px;
+                .tablinks { 
+                    display: block;
+                    font-family: "GillSans-Medium-Italic", "Arch-Regular"; 
+                    background-color: inherit; 
+                    color: black; 
+                    padding: 22px 16px; 
+                    width: 100%; 
+                    border: none; 
+                    outline: none; 
+                    text-align: left; 
+                    cursor: pointer; 
+                    transition: 0.3s; 
+                    font-size: 17px;
+                    &:hover{ background-color: #ddd; color: #04383b;} 
+                }
+                .active{background-color: #04383b; color: #fff;}
+            }
+            .tabcontent {
+                float: left; 
+                padding: 15px;   
+                width: 70%; 
+                height: 300px;
+                border-left: 1px solid #04383b;
+                overflow-y: scroll;    
+                .tabcontent-h3{
+                    font-family: "GillSans-Medium-Italic", "Arch-Regular";
+                } 
+                .tabcontent-p{
+                    font-family: "GillSans-Medium-Italic", "Arch-Regular";
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .content{
+        .portfolio{
+            .carousel-new{
+                width: 100% !important;
+                .carousel-inner{
+                    .carousel-item{
+                        .img-content{
+                            padding-top: 10px;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

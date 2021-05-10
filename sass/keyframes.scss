@@ -1,0 +1,26 @@
+//  Menu Navbar Animation //
+
+@keyframes openMenu {
+    0%{
+        width: 0;
+        left: -40px;
+    }
+    100%{
+        width: 200px;
+        left: 0;
+    }
+}
+
+@keyframes closeMenu {
+    0%{
+        width: 200px;
+        left: 0;
+    }
+    100%{
+        width: 0 !important;
+        left: -40px !important;
+    }
+}
+
+// 
+

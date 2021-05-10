@@ -1,0 +1,30 @@
+footer {
+  background-color: #0660b4; }
+  footer .footer {
+    display: flex;
+    flex-wrap: wrap; }
+    footer .footer .footer-menu {
+      width: 50% !important; }
+    footer .footer .social-media {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end; }
+  footer .copy-right-site {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #b4b4b4;
+    padding: 5px 0; }
+    footer .copy-right-site strong {
+      text-align: center;
+      color: #ffffff; }
+      footer .copy-right-site strong a {
+        color: #04383b; }
+
+@media screen and (max-width: 470px) {
+  footer .footer .footer-menu {
+    width: 100% !important;
+    justify-content: center !important; }
+  footer .footer .social-media {
+    width: 100%;
+    justify-content: center;
+    padding-top: 15px; } }
